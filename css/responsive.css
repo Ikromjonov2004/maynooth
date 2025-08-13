@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1536px) {
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    .header__end {
+        gap: 32px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sitenav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .header__logo img {
+    width: 140px;
+    height: auto;
+   }
+}
+
+@media only screen and (max-width: 640px) {
+   
+}
