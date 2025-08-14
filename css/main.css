@@ -60,7 +60,7 @@
 .mobile-sitenav-overlay {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -71,7 +71,7 @@
     width: 100%;
     max-width: 500px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background-color: var(--white);
@@ -100,4 +100,69 @@
 
 .mobile-sitenav a:hover {
     color: var(--primary);
+}
+
+/* breadcrumb styles */
+
+.breadcrumb {
+    margin: 34px 0;
+}
+
+.breadcrumb__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb-item:last-child a {
+    color: var(--gray-400);
+}
+
+/* filter styles */
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.filter-form__label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-form input {
+    display: none;
+}
+
+.filter-form__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--black);
+}
+
+.filter-form__price {
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.filter-form__number {
+    color: var(--gray-100);
+}
+
+.filter__showmore {
+    text-decoration: underline;
+}
+
+.filter__showmore:hover {
+    color: var(--primary);
+    text-decoration: none;
 }
